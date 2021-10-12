@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PomoNotes from "../pomo-notes/pomo-notes.componnent"
+
 import "./settings-modal.styles.scss"
 
 const SettingsModal = ({ workValue, breakValue, handleChange, handleSubmit, settingsFormError, showModal }) => {
@@ -26,6 +28,7 @@ const SettingsModal = ({ workValue, breakValue, handleChange, handleSubmit, sett
           {settingsFormError ? <p className="message error-message"><span className="fa fa-exclamation-circle fa-lg fa-fw"></span> Please enter a number between 1 and 60 to set a custom Work Timer and Break Timer.</p> : null}
         </div>
       </div>
+      <PomoNotes />
     </div>
   );
 }
