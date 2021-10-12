@@ -7,12 +7,12 @@ const SettingsModal = ({ workValue, breakValue, handleChange, handleSubmit, sett
   return (
     <div className="modal" id="modal">
       <div className="modal-content">
-        <div className="modal-header">Set Custom Timer (in minutes)</div>
+        {/* <div className="modal-header">Set Custom Timer (in minutes)</div> */}
         <div className="modal-body">
           <form className="settings-form" onSubmit={(event) => handleSubmit(event, workValue, breakValue)} id="settings-form">
             <div className="form-group">
               <label htmlFor="work-value">Work:</label>
-              <input type="text" name="workValue" onChange={(event) => handleChange(event)} value={workValue} id="work-value" required />
+              <input autoFocus type="text" name="workValue" onChange={(event) => handleChange(event)} value={workValue} id="work-value" required />
             </div>
             <div className="form-group">
               <label htmlFor="break-value">Break:</label>
