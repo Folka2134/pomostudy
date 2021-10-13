@@ -41,7 +41,7 @@
 
 @import "variables";
 
-button {
+.pomo-button {
   height: 100%;
   width: 60px;
   padding: 0 0 3px 0;
@@ -103,11 +103,12 @@ button {
       padding: 5px;
 
       .form-group {
-        display: -webkit-box;
-        display: -ms-flexbox;
+        // display: -webkit-box;
+        // display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
+        // -webkit-box-align: center;
+        // -ms-flex-align: center;
+        justify-content: center;
         align-items: center;
       }
 
@@ -118,11 +119,11 @@ button {
         letter-spacing: 3px;
         text-transform: uppercase;
       }
-      input[type="text"] {
+      .pomo-input[type="text"] {
         background: transparent;
         border-bottom: 1px solid change-color($black, $lightness: 20%);
         margin-left: 5px;
-        max-width: 40px;
+        max-width: 15px;
       }
       .button-group {
         -webkit-box-pack: end;
